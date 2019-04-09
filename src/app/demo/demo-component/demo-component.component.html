@@ -1,0 +1,24 @@
+<div class="demo-border" (click)="onClickOutside($event)">
+  <ng-template [appTooltip]="tooltip1">
+    <div class="tool-tip-up tool-tip-placement-1" [hidden]="tooltipFlag1">
+      This is my tooltip 1
+    </div>
+  </ng-template>
+  <ng-template [appTooltip]="tooltip2">
+    <div class="tool-tip-up tool-tip-placement-2" [hidden]="tooltipFlag2">
+      This is my tooltip 2
+    </div>
+  </ng-template>
+
+  <button class="button-A" #tooltip1 (click)="tooltipClick1()">See tooltip 1</button>
+  <button class="button-B" #tooltip2 (click)="tooltipClick2()">See tooltip 2</button>
+
+  <div class="tool-tip-down tool-tip-placement-3" [hidden]="tooltipFlag3">
+    This is my tooltip 1
+  </div>
+
+  <div class="tool-tip-down tool-tip-placement-4" [hidden]="tooltipFlag4">
+    This is my tooltip 2
+  </div>
+
+</div>

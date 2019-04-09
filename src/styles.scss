@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './scss/vars';
+
+body{
+    border: 2px;
+    padding: 0 30px 0 30px;
+    margin: 30px;
+    color:$font-color;  
+    background-color: $background-color;
+    font-family: $font-family;
+}

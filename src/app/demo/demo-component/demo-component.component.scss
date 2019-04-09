@@ -1,0 +1,104 @@
+@import '../../../scss/vars';
+
+
+.demo-border{
+    height: 75%;
+    min-height: 1000px;
+}
+button{
+    padding: 10px;
+    margin: 50px;
+    background-color:$nav-active-bg-color; 
+    font-family: $font-family;
+    border-radius: $border-radius;
+    border: 1px;
+    outline:none;
+}
+.button-A{
+    margin-left: 40px;
+    position: relative;
+}
+
+.button-B{
+    margin-left: 50px;
+    position: relative;
+}
+.tool-tip-placement-1{
+    position: relative;
+    font-size: $font-size;
+    margin: 10px;
+}
+
+.tool-tip-placement-2{
+    position: relative;
+    left: 260px;
+    font-size: $font-size;
+    margin: 10px;
+}
+
+.tool-tip-placement-3{
+    position: relative;
+    font-size: $font-size;
+    margin: 10px;
+}
+
+.tool-tip-placement-4{
+    position: relative;
+    left: 260px;
+    font-size: $font-size;
+    margin: 10px;
+}
+
+.tool-tip-down {
+    bottom: 245px;
+    position: absolute;
+    background-color: $nav-active-bg-color;
+    width: 133px;
+    padding: 1px 1px 4px 25px;
+    color: black;
+    border-radius: $border-radius;
+}
+
+.tool-tip-down:after, .tool-tip-down:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tool-tip-down:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: $nav-active-bg-color;
+    border-width: 13px;
+    top: -26px;
+}
+
+.tool-tip-up {
+    position: absolute;
+    background-color: $nav-active-bg-color;
+    width: 133px;
+    padding: 1px 1px 4px 25px;
+    color: black;
+    border-radius: $border-radius;
+}
+
+.tool-tip-up:after, .tool-tip-up:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tool-tip-up:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: $nav-active-bg-color;
+    border-width: 13px;
+}

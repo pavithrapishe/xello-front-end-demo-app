@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+  <div class="well well-sm">
+    <header class="headerText">
+      <h2>{{title}} Demo:</h2>
+    </header>
+    <img src="../assets/images/Xello.jpg" alt="Xello Logo" class="xelloImg">
+  </div>
+  <h2>Routing Sample : </h2>
+  <nav class="nav">
+      <a routerLink="/implDetails" routerLinkActive="active" class="nav__link" [attr.tabindex]="navOpen ? 0 : -1">
+        Implemention Details</a>
+    <a routerLink="/tooltipDemo" routerLinkActive="active" class="nav__link" [attr.tabindex]="navOpen ? 0 : -1">
+      Tooltip Demo</a>
+    <a routerLink="/routeDemo1" routerLinkActive="active" class="nav__link" [attr.tabindex]="navOpen ? 0 : -1">
+      Routing Demo 1</a>
+    <a routerLink="/routeDemo2" routerLinkActive="active" class="nav__link" [attr.tabindex]="navOpen ? 0 : -1">
+      Routing Demo 2</a>
+  </nav>
+
+  <div class="routeBorder">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

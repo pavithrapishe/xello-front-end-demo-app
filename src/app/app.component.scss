@@ -1,0 +1,40 @@
+@import '../scss/vars';
+
+.nav{
+    width: 100%;
+    overflow: auto;
+    background-color:$font-color;
+}
+
+.nav a {
+    width: 25%;
+    float:left;
+    display: block;
+    color: $nav-font-color;
+    text-align: center;
+    padding: 12px 0 12px 0;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: $nav-active-bg-color;
+    color: white;
+}
+
+.headerText{
+    text-align: center;
+    font-size: xx-large;
+}
+.xelloImg{
+  max-width: 7%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.routeBorder{
+    border: 8px solid $nav-active-bg-color;
+    height: 300px;
+}
